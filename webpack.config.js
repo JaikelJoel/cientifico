@@ -16,18 +16,18 @@ module.exports = {
             test: /\.js?$/,
             exclude: /node_modules/,
             use: {
-               loader: 'babel-loader'
+               loader: 'babel-loader',
             }
          } 
       ]
    },
    plugins: [
-      new HtmlWebpackPlugin([
+      new HtmlWebpackPlugin(
          {
             inject: true,
-            template: '.public/index.html',
+            template: './public/index.html',
             filename: './index.html',
          }
-      ])
+      ),
    ]
 }  
