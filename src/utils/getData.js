@@ -9,3 +9,4 @@ const getData = async (id) => {
       console.log('Fetch Error', error);
    }
 } 
+export default getData;
